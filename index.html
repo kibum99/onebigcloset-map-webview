@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>좌표로 주소를 얻어내기</title>
+    <link rel="stylesheet" href="style/main_style.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=33c84b4abfed3adabaa23698928db637&libraries=services"></script>
+    <script type="module", src="./kakaomap.js"></script>
+    <script type="module", src="./search.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="map_wrap">
+        <div id="map"></div>
+    </div>
+    <div id="send_map_container">
+        <div id="send_map" onclick="send_map()"><p>장소 공유하기</p></div>
+    </div>
+    <div id="static_map"></div>
+</body>

@@ -1,0 +1,58 @@
+:root{
+    --red : #EE6B6E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#map {
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+.map_wrap {position:absolute;
+    width:100%;
+    height:100%;
+}
+
+#send_map_container{
+    position: absolute;
+    bottom: 64px;
+    height: 72px;
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#send_map {
+    width:400px;
+    height:100%;
+    background-color: var(--red);
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+#send_map > p {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+#static_map {
+    width:1px;
+    height:1px;
+    pointer-events: none;
+}
